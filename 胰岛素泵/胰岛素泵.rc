@@ -1,0 +1,411 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\胰岛素泵.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\胰岛素泵.ico"
+IDI_Lamp1               ICON    DISCARDABLE     "res\\Lamp1.ico"
+IDI_ICONhelp            ICON    DISCARDABLE     "res\\Help.ico"
+IDI_ICONOpt             ICON    DISCARDABLE     "res\\EOapp.ico"
+IDI_ICONAbout           ICON    DISCARDABLE     "res\\About.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 胰岛素泵"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "胰岛素泵 2.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012  西邮软件1001第一小组",IDC_STATIC,40,
+                    25,168,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MY_DIALOG DIALOGEX 0, 0, 203, 146
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE
+EXSTYLE WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW | WS_EX_STATICEDGE | 
+    WS_EX_APPWINDOW
+FONT 10, "新宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "关闭",IDCANCEL,65,114,26,18
+    PUSHBUTTON      "选项",IDC_OPTION,150,114,28,18,0,WS_EX_STATICEDGE
+    LTEXT           "Copyright XiYou Software Engineering",IDC_COPYRIGHT,30,
+                    136,145,8
+    PUSHBUTTON      "开始",IDC_START,26,114,26,18,BS_FLAT
+    CTEXT           "time",IDC_SHOWTIME,17,54,64,12,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "帮助",IDC_EXPLAINbtn,111,114,28,18
+    LTEXT           "血糖浓度:",IDC_Current,61,38,37,10
+    LTEXT           "",IDC_SCURRENT,93,36,36,11,0,WS_EX_DLGMODALFRAME
+    GROUPBOX        "显示器",IDC_show,7,22,156,92,BS_CENTER | BS_FLAT,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         "Progress1",IDC_ElectricQuantity,"msctls_progress32",
+                    WS_BORDER | WS_GROUP,19,35,28,11
+    PUSHBUTTON      "",IDC_lamp,146,31,16,15
+    LTEXT           "D",IDC_S_D,46,36,8,9
+    LTEXT           "此时段目标范围:",IDC_STATIC,17,71,62,10
+    LTEXT           "",IDC_STD,81,70,69,11,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    LTEXT           "日基础量:",IDC_STATIC,91,54,37,11
+    LTEXT           "",IDC_mBISIC,127,54,23,11
+    LTEXT           "胰岛素余量:",IDC_STATIC,17,89,54,10
+    LTEXT           "",IDC_DoseLeft,68,89,82,10,WS_BORDER
+    PUSHBUTTON      "早餐前",IDC_Pre_Breafast,171,34,25,17
+    PUSHBUTTON      "午餐前",IDC_Pre_Lunch,171,59,25,17
+    PUSHBUTTON      "晚餐前",IDC_Pre_Supper,171,84,25,17
+    LTEXT           "状态",IDC_STATE,129,36,18,11,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "x",IDC_QUIT,181,3,15,11
+END
+
+IDD_DLGconfirm DIALOGEX 0, 0, 170, 77
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+CAPTION "是否退出？"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,119,17,44,14
+    PUSHBUTTON      "取消",IDCANCEL,118,40,45,14
+    LTEXT           "提示：是否确定关机？",IDC_STATICx,22,19,95,25,0,
+                    WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+END
+
+IDD_CHOICE DIALOGEX 0, 0, 192, 251
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | 
+    WS_VSCROLL | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+CAPTION "选择&设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,148,44,29,15,BS_FLAT,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "BACK",IDCANCEL,149,17,28,17,BS_FLAT,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "帮助",IDC_m_HELP,116,17,30,17,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_GetDataText,116,45,31,14,ES_AUTOHSCROLL,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "请选择，然后输入数值",IDC_Choose,7,7,170,207
+    LTEXT           "一日总量×50%",IDC_STATIC,117,85,56,11
+    LTEXT           "一日总量×20%",IDC_STATIC,117,110,56,10
+    LTEXT           "一日总量×15%",IDC_STATIC,117,134,56,12
+    LTEXT           "一日总量×15%",IDC_STATIC,116,157,56,12
+    LTEXT           "",IDC_INSULINleft,72,21,35,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "",IDC_ForDay,71,43,35,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "还原默认",IDC_tacitly,119,177,47,15,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "",IDC_DAYBASIC,73,83,33,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "",IDC_sBreakfast,73,109,33,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "",IDC_sLunch,73,134,33,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "",IDC_sSupper,73,158,33,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    CONTROL         "添加胰岛素",IDC_RADIO1left,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,7,19,53,15,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    CONTROL         "一日总量",IDC_RADIO2AllDay,"Button",BS_AUTORADIOBUTTON,
+                    7,40,53,15,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    CONTROL         "日基础量",IDC_RADIO3Basic,"Button",BS_AUTORADIOBUTTON,7,
+                    82,54,15,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    CONTROL         "早餐前补充",IDC_RADIO4breakfast,"Button",
+                    BS_AUTORADIOBUTTON,7,107,54,15,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    CONTROL         "午餐前补充",IDC_RADIO5lunch,"Button",BS_AUTORADIOBUTTON,
+                    7,132,54,15,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    CONTROL         "晚餐前补充",IDC_RADIO6supper,"Button",
+                    BS_AUTORADIOBUTTON,7,156,54,15,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    GROUPBOX        "                               当前                     默认            ",
+                    IDC_STATIC,7,63,170,147,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME,113,79,1,85
+    CONTROL         "检测间隔时间/分",IDC_CK_TIME,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,7,178,73,15,
+                    WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    EDITTEXT        IDC_Time_Interval,84,178,26,14,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_STATICEDGE
+END
+
+IDD_EXPLIAIN DIALOG DISCARDABLE  0, 0, 202, 126
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "说明"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,175,111,25,14
+END
+
+IDD_ShowGuide DIALOG DISCARDABLE  0, 0, 249, 150
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "指导"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,218,134,31,14
+END
+
+IDD_Declare DIALOG DISCARDABLE  0, 0, 195, 102
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_CAPTION | WS_SYSMENU
+CAPTION "说明"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,171,81,20,14
+    LTEXT           "注意：糖尿病医生会教你怎么改变基础率来适应不停变化着的胰岛素需要，以下仅供参考！                             1. 根据体重计算（尚未使用胰岛素）一日总量＝体重        kg×0.44  ;                                                                             2. 一日总量＝用泵前胰岛素用量×(80%--100%);                 3.  50%基础量：基础率总量/24=每??",
+                    IDC_STATIC,1,4,190,91
+END
+
+IDD_INJECT DIALOG DISCARDABLE  0, 0, 174, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注入"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,122,27,45,14
+    PUSHBUTTON      "取消",IDCANCEL,121,59,46,14
+    LTEXT           "提醒：\n        注入胰岛素请按确定键。",IDC_STATIC,14,
+                    44,107,30
+    LTEXT           "注射量",IDC_Inject_num,59,20,61,15
+    LTEXT           "本次注射：",IDC_Inject,15,20,41,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,3
+ PRODUCTVERSION 1,0,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "胰岛素泵 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 3\0"
+            VALUE "InternalName", "胰岛素泵\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "胰岛素泵.EXE\0"
+            VALUE "ProductName", "胰岛素泵 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 3\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_DLGconfirm, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_CHOICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_EXPLIAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 200
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_ShowGuide, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_Declare, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 191
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_INJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAPexplain       BITMAP  DISCARDABLE     "res\\explain.bmp"
+IDB_GUIDE               BITMAP  DISCARDABLE     "res\\指导.bmp"
+IDB_BackGroud           BITMAP  DISCARDABLE     "res\\backgroud.bmp"
+IDB_BKgroud             BITMAP  DISCARDABLE     "res\\ground.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_A_ELECTRIC          WAVE    DISCARDABLE     "res\\AlarmElectric.wav"
+IDR_WARN                WAVE    DISCARDABLE     "res\\alarm.wav"
+IDR_USE_UP              WAVE    DISCARDABLE     "res\\UseUp.wav"
+IDR_LowAlarm            WAVE    DISCARDABLE     "res\\LOW.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 胰岛素泵(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\胰岛素泵.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
